@@ -1,15 +1,13 @@
-// import React from "react";
 import React, { useState, useEffect } from 'react';
 import washingmachine from '../img/washmachine.png'
-import about from '../img/about.png'
+import about from '../img/about2.png'
 import airconditioner from '../img/airconditioner.png'
 import frige from '../img/frige.png'
 import frenqtly from "../img/frquently.png"
 
 
-export default function Home() {
-
-  const [number, setNumber] = useState(0);
+export default function Fridge(){
+    const [number, setNumber] = useState(0);
   const [worker, setWorker] = useState(0);
 
   useEffect(() => {
@@ -39,19 +37,19 @@ export default function Home() {
   }, [worker]);
   return (
     <>
-      <section className="Home">
+      <section className="Home fridge">
         < div className="container">
           <div className="row">
             <div className="col-lg-6 col-sm-12 home-head">
-              <h6>Service Support Bangalore</h6>
-              <h1>Service Center
-                In Bangalore Call @ 18003137897</h1>
-              <p>We believe in every grow at your door step one stop solutions for all home based works</p>
+              <h6>Bangalore Service Center</h6>
+              <h1>Refrigerator Service Center For Repair & Service
+tel:18001239687</h1>
+              {/* <p>We believe in every grow at your door step one stop solutions for all home based works</p> */}
               <button className="btn">Book Now <i class="fa-solid fa-arrow-right-long"></i></button>
             </div>
             <div className="col-lg-6 col-sm-12 head-call">
               <div className="card head-call-Now">
-                <a href="tel:18003137897" className="text-center text-dark  head-call-Now">Fell Free To Call Us Now</a>
+                <a href="tel:18003137897" className="text-center text-dark  head-call-Now"> Call Us Now</a>
               </div>
             </div>
           </div>
@@ -75,12 +73,14 @@ export default function Home() {
 
           </div>
           <div className="col-lg-6 col-sm-12 about-info">
-            <h6>5 YEARS OF EXPERIENCE</h6>
+            <h6>Best Refrigerator Fridge Machine Repair & Service</h6>
             <h3>About Us</h3>
-            <p>Welcome to our Washing Machine and Refrigerator Repair Service Center! We are a trusted and reliable service center specializing in the repair and maintenance of washing machines and refrigerators. With years of experience in the industry, we have built a reputation for providing top-quality repairs, excellent customer service, and affordable solutions to residents in Bangalore. Our team of skilled technicians is well-trained and knowledgeable in handling a wide range of washing machine and refrigerator brands and models. We understand the importance of these appliances in your daily life, and our goal is to ensure that they are functioning optimally, keeping your clothes clean and fresh, and your food preserved at the right temperature.</p>
-            <h5><i class="fa-solid fa-check tick-icon "></i>Doorstep Service In 90 Min</h5>
-            <h5><i class="fa-solid fa-check tick-icon"></i>Appliances Service Reasonable Price</h5>
+            <p>
+            Welcome to service center , your trusted partner for professional refrigerator repair services in Bangalore. We understand the inconvenience caused by a malfunctioning washing machine, and our team of skilled technicians is here to provide efficient and reliable repairs to get your appliance back up and running smoothly. If your refrigerator or fridge is giving you trouble, we're here to assist you. Our dedicated repair service specializes in refrigerator and fridge repairs in Bangalore City. With our team of skilled technicians and a commitment to customer satisfaction, we aim to provide efficient and reliable repairs to get your appliance running smoothly again.</p>
+            <h5><i class="fa-solid fa-check tick-icon "></i>Expert Technicians</h5>
+            <h5><i class="fa-solid fa-check tick-icon"></i>Customer Satisfaction​</h5>
             <h5><i class="fa-solid fa-check tick-icon"></i>Service Warranty Up To 90 Days</h5>
+            <h5><i class="fa-solid fa-check tick-icon"></i>No Extra Charge​</h5>
           </div>
         </div>
       </section>
@@ -135,6 +135,8 @@ export default function Home() {
         </div>
       </section>
 
+   
+
       {/* Contact us */}
 
       <section className="contact container">
@@ -181,20 +183,7 @@ export default function Home() {
               <h6>Home Works provides only experienced technicians to fulfill the service requirement.</h6>
             </div>
           </div>
-          <div className="row">
-            <div className="col-lg-4 col-sm-12 choose">
-              <h3>Competitive Pricing</h3>
-              <h6>We offer affordable and transparent pricing for our repair services. Our upfront cost estimates ensure that you have a clear understanding of the expenses involved, with no hidden charges.</h6>
-            </div>
-            <div className="col-lg-4 col-sm-12 choose">
-              <h3>Customer Satisfaction</h3>
-              <h6>Customer satisfaction is our utmost priority. We are dedicated to delivering exceptional service and ensuring that our customers are satisfied with the results..</h6>
-            </div>
-            <div className="col-lg-4 col-sm-12 choose">
-              <h3>Timely Service:</h3>
-              <h6>We value your time and strive to provide prompt and timely service. Our technicians will arrive at your location on schedule, equipped with the necessary tools and parts to complete the repairs efficiently.</h6>
-            </div>
-          </div>
+          
         </div>
 
       </section>
@@ -345,5 +334,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+    )
 }

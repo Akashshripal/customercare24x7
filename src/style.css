@@ -30,15 +30,19 @@ body{
     /* margin-bottom: auto; */
 
   }
-  
-  .navbar-nav > li{
+  .footer-logo{
+    max-height: 50px;
+    min-width: inherit;
+
+  }
+  .naving > li{
+  font-family: 'Mukta', sans-serif;
     margin-right:20px;
     padding-bottom: 18px;
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 0.06em;
-    text-transform: uppercase;;
+    text-transform: uppercase;
     font-weight: 700;
-    
   }
  
   .nav-link:hover{
@@ -51,6 +55,29 @@ body{
     margin-bottom: auto;
   }
   
+  /* call-now-down */
+  .call-now-down{
+    background-color: #00BB00;
+    padding: 9px 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 1020;
+    width: 100%;
+    text-align: center;
+   
+  }
+  .call-now-Down{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+
+  }
+  /* footer */
+  .footer{
+    background-image: url('./img/footer-bg.png');
+    color: white;
+  }
+  
  /* header */
   .Home{
     /* margin-top: 200px; */
@@ -59,7 +86,13 @@ body{
     background-size: cover;
     color: white;
     /* height: 500px; */
-
+  }
+  .fridge{
+    background-image: url('./img/Home-bg2.png');
+    color: black;
+  }
+  .home-head {
+    margin-top: 80px;
   }
   .home-head > h1{
     font-size: 60px;
@@ -96,8 +129,11 @@ body{
   .about{
     padding: 30px;
   }
-  .about-img{
-   width: 400px;
+  /* .about-img{
+   width: 200px;
+  } */
+  .about-image{
+    width: 250px;
   }
   .rel{
    position: relative;
@@ -107,13 +143,21 @@ body{
     color: white;
     background: linear-gradient(90deg, rgba(255,81,47,1) 35%, rgba(240,152,25,1) 100%);
     position: absolute;
-    /* top: 0; */
     bottom: 50px;
     left: -25px;
-    padding:15px 45px;
+    padding: 8px 24px;
+    /* padding:15px 45px; */
     border-bottom-right-radius: 20px ;
 
   }
+  
+  
+  .customer > h1{
+    font-size: 20px;
+   }
+   .customer > h4{
+   font-size: 16px;
+   } 
   .tick-icon{
     color: #FF512F;
    margin-bottom: 20px;
@@ -318,10 +362,10 @@ body{
   }
 
   .iconsNew{
-    font-size: 40px;
+    font-size: 25px;
     padding: 5px;
     color: #f35a38;
-    margin-right: 15px;
+    margin-right: 5px;
   }
   /* .contactnew-right{
     padding:20px 120px;
@@ -333,7 +377,10 @@ body{
   .contact-head > h5{
     font-weight: 900;
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom:8px;
+  }
+  .contact-head > p{
+    margin-top: 0;
   }
   .contact-head > p,.contactNew-form > *{
     font-family: 'Nunito', sans-serif;
@@ -345,6 +392,7 @@ body{
      color: aliceblue;
      padding: 12px 35px;
      font-size: 19px;
+     margin-bottom: 50px;
      /* margin: 0 auto; */
   }
   .contacting{
@@ -353,6 +401,14 @@ body{
     font-size: 16px;
   };
 
+
+  /* footer */
+ 
+  .footer{
+    background-image: url('./img/footer-bg.png');
+    background-image: url('./img/Home-bg.png');
+    height: 400px;
+  }
   @media only screen and (max-width: 600px) {
     .navbar{
         padding: 0;
@@ -371,9 +427,10 @@ body{
   .rel{
    width: 100%;
   }
-    .about-img{
+  
+    /* .about-img{
       width: 100%;
-    }
+    } */
     .head-call-Now{
       /* margin-top: -50px; */
       box-shadow: none;
@@ -385,27 +442,136 @@ body{
   .Askedques > h1 {
     font-size: 11px ;
   }
-  .contactnew-right{
+  /* .contactnew-right{
       padding: 0px;
       margin: 0 auto;
-    }
+    } */
   .dropDownlist{
     max-width: 100%;
+  }
+  /* contect new */
+  .iconsNew{
+    font-size: 20px;
+  }
+
+  .contact-head > h5{
+   font-size: 16px;
+  }
+  .footer{
+    background-image: url('./img/footer-bg.png');
+    color: white;
+  }
+  
+  .footer-item > h6{
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .footer-item > p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .footer-icon > i{
+    margin-right: 35px;
+  }
+  .footer-input{
+    background: none;
+    color: white;
+    padding: 5px 15px;
+    margin: 25px 0;
+  }
+  .arrow-icon{
+    color: #f35a38;
+    /* border-radius: 1px solid white; */
+
+  }
+  .footer-bootom{
+    margin: 35px 0;
+  }
+  .line{
+    border-bottom: 1px solid gray;
+  }
+  .call-now-down{
+    padding: 5px 0;
+
+  }
+  .call-now-Down{
+   margin-left: -19px;
   }
   }
 
   @media only screen and (min-width: 1024px) {
     .Drops{
           padding: 10px 110px;
-
      }
   .Askedques > h1 {
    font-size: 60px;
   }
   .head-call{
-    margin-top: 80px;
+    margin-top: 180px;
+  }
+  /* .about-image{
+    max-width: 100%;
+  } */
+  .contactnew-right{
+    padding:20px 120px;
+  }
+
+  .iconsNew{
+    font-size: 40px;
+  }
+  .customer > h1{
+   font-size: 28px;
+  }
+  .customer > h4{
+  font-size: 22px;
+  }
+  .customer{
+   padding: 15px 45px;
   }
   .about-image{
-    max-width: 100%;
+    width: 400px;
+  }
+  .footer{
+    background-image: url('./img/footer-bg.png');
+    color: white;
+  }
+  .footer-data{
+    padding: 20px;
+  }
+  .line{
+    border-bottom: 1px solid gray;
+  }
+  .footer-item > h6{
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .footer-item > p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .footer-icon > i{
+    margin-right: 35px;
+  }
+  .footer-input{
+    background: none;
+    color: white;
+    padding: 5px 15px;
+  }
+  .arrow-icon{
+    color: #f35a38;
+  }
+  .footer-bootom{
+    margin: 35px 0;
+  }
+  .footer-text{
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
   }
   }

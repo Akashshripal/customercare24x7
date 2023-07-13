@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
 
@@ -34,14 +35,14 @@ export default function Navbar() {
                     <a className="navbar-brand" href="#"> <img className="logo" src="https://servicecenter24x7bangalore.in/wp-content/uploads/2023/06/images-1.png" alt="logo" /></a>
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
 
-                        <ul data-in="#" data-out="#" className="nav navbar-nav me-auto mb-2 p fs-10" id="menu-new-menu ">
-                            <li className="nav-item"><a className="nav-link" title="Home" href="">Home</a></li>
-                            <li className="nav-item"><a className="nav-link" title="Refrigerator &amp; Fridge  Repair Service Bangalore" href="">Refrigerator &amp; Fridge  Repair Service Bangalore</a></li>
-                            <li className="nav-item"><a className="nav-link" title="Washing Machine Repair Service Bangalore" href="">Washing Machine Repair Service Bangalore</a></li>
-                            <li className="nav-item"><a className="nav-link" title="Terms &amp; Conditions" href="">Terms &amp; Conditions</a></li>
-                            <li className="nav-item"><a className="nav-link" title="Privacy Policy" href="">Privacy Policy</a></li>
-                            <li className="nav-item"><a className="nav-link" title="Contact Us" href="">Contact Us</a></li>
-                            <li className="nav-item"><a className="nav-link" title="About Us" href="">About Us</a></li>
+                        <ul data-in="#" data-out="#" className="nav navbar-nav me-auto mb-2 p fs-10 naving" id="menu-new-menu ">
+                            <li className="nav-item"><Link className="nav-link"  to="/">Home</Link></li>
+                            <li className="nav-item"><Link className="nav-link"  to="/fridge">Refrigerator &amp; Fridge  Repair Service Bangalore</Link></li>
+                            <li className="nav-item"><Link className="nav-link"  to="">Washing Machine Repair Service Bangalore</Link></li>
+                            <li className="nav-item"><Link className="nav-link"  to="">Terms &amp; Conditions</Link></li>
+                            <li className="nav-item"><Link className="nav-link"  to="">Privacy Policy</Link></li>
+                            <li className="nav-item"><Link className="nav-link"  to="">Contact Us</Link></li>
+                            <li className="nav-item"><Link className="nav-link"  to="">About Us</Link></li>
                         </ul>
 
                         <div className="input-group rounded search">
