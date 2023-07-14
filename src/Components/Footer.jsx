@@ -30,9 +30,9 @@ export default function Footer(){
             <div className="col-lg-4 col-sm-12 footer-item">
                 <h6>Contact Us</h6>
                 <h6>ADDRESS</h6>
-                <p>Whitefield Bangalore</p>
+                <p>Near your place</p>
                 <h6>EMAIL</h6>
-                <p>support@servicecenter24x7bangalore.in</p>
+                <p>info@yourdomainname.com</p>
                 <h6>CONTACT</h6>
                 <p>18001239687</p>
             </div>
@@ -45,13 +45,13 @@ export default function Footer(){
          
          <div className="footer-bootom">
          <div className="row align-center">
-                <div className="col-lg-4">
-                    <p className="footer-text">© Copyright 2021 Service Center Bangalore Designed &amp; Developed By Orion Techgen </p>
+                <div className="col-lg-12 col-sm-12">
+                    <p className="footer-text">© Copyright 2021 Service Center  Designed &amp; Developed By Orion Techgen </p>
                 </div>
-                <div className="col-lg-4 text-center logo">
+                {/* <div className="col-lg-4 text-center logo">
                     <a href="#"><img className="footer-logo" src="https://servicecenter24x7bangalore.in/wp-content/uploads/2023/06/images-1.png" alt="Logo"/></a>
-                </div>
-                <div className="col-lg-4 text-right newsletter">
+                </div> */}
+                {/* <div className="col-lg-4 text-right newsletter">
                     <form action="#">
                         <div className="input-group">
                             <input className="footer-input form-control" type="email" placeholder="Enter your e-mail"  name="email"/>
@@ -62,13 +62,13 @@ export default function Footer(){
                             </span>
                         </div>
                     </form>
-                </div>
+                </div> */}
             </div>
          </div>
         
          </div>
          <div className="row text-center call-now-down">
-         <a className="call-now-Down" href="tel:18001239687">
+         <a className="call-now-Down" href="tel:80123455667">
             <div className="col-lg-12 col-sm-12"><i className="fa-solid fa-phone"></i> Book now</div>
          </a>
          </div>

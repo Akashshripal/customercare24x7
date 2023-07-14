@@ -1,13 +1,13 @@
-// import React from "react";
 import React, { useState, useEffect } from 'react';
 import washingmachine from '../img/washmachine.png'
-import about from '../img/about.png'
+import about from '../img/about3.png'
 import airconditioner from '../img/airconditioner.png'
 import frige from '../img/frige.png'
 import frenqtly from "../img/frquently.png"
+import Machine01 from "../img/Machine-01.png"
+import Machine02 from "../img/Machine-02.png"
 
-
-export default function Home() {
+export default function Machine() {
 
   const [number, setNumber] = useState(0);
   const [worker, setWorker] = useState(0);
@@ -39,19 +39,18 @@ export default function Home() {
   }, [worker]);
   return (
     <>
-      <section className="Home">
+      <section className="Home machine">
         < div className="container">
           <div className="row">
             <div className="col-lg-6 col-sm-12 home-head">
-              <h6>Service Support </h6>
-              <h1>Service Center
-                In Call @ 80123455667</h1>
-              <p>We believe in every grow at your door step one stop solutions for all home based works</p>
+              <h6> Service Center</h6>
+              <h1>Washing Machine Service Center For Repair & Service
+                tel:18001239687</h1>
               <button className="btn">Book Now <i class="fa-solid fa-arrow-right-long"></i></button>
             </div>
             <div className="col-lg-6 col-sm-12 head-call">
               <div className="card head-call-Now">
-                <a href="tel:80123455667" className="text-center text-dark  head-call-Now-btn">Fell Free To Call Us Now</a>
+                <a href="tel:18003137897" className="text-center text-dark  head-call-Now">Fell Free To Call Us Now</a>
               </div>
             </div>
           </div>
@@ -65,8 +64,8 @@ export default function Home() {
           <div className="col-lg-6 col-sm-12">
             <div className="rel">
               <p className="about-img">
-                <img className='about-image'  src={about} alt="" />
-                </p>
+                <img className='about-image' src={about} alt="" />
+              </p>
               <div className="customer">
                 <h1>25000+</h1>
                 <h4>Customers Served</h4>
@@ -75,71 +74,95 @@ export default function Home() {
 
           </div>
           <div className="col-lg-6 col-sm-12 about-info">
-            <h6>5 YEARS OF EXPERIENCE</h6>
+            <h6>Best Washing Machine Repair & Service</h6>
             <h3>About Us</h3>
-            <p>Welcome to our Washing Machine and Refrigerator Repair Service Center! We are a trusted and reliable service center specializing in the repair and maintenance of washing machines and refrigerators. With years of experience in the industry, we have built a reputation for providing top-quality repairs, excellent customer service, and affordable solutions to residents in Bangalore. Our team of skilled technicians is well-trained and knowledgeable in handling a wide range of washing machine and refrigerator brands and models. We understand the importance of these appliances in your daily life, and our goal is to ensure that they are functioning optimally, keeping your clothes clean and fresh, and your food preserved at the right temperature.</p>
-            <h5><i class="fa-solid fa-check tick-icon "></i>Doorstep Service In 90 Min</h5>
-            <h5><i class="fa-solid fa-check tick-icon"></i>Appliances Service Reasonable Price</h5>
+            <p>Welcome to service center , your trusted partner for professional washing machine repair services in Bangalore. We understand the inconvenience caused by a malfunctioning washing machine, and our team of skilled technicians is here to provide efficient and reliable repairs to get your appliance back up and running smoothly. Are you experiencing issues with your washing machine? Don't worry, we are here to help! Our professional and reliable washing machine repair service in Bangalore is just a call away. With years of experience and a team of skilled technicians, we provide prompt and efficient repairs for all types and brands of washing machines.</p>
+            <h5><i class="fa-solid fa-check tick-icon "></i>Expert Technicians</h5>
+            <h5><i class="fa-solid fa-check tick-icon"></i>Customer Satisfaction</h5>
             <h5><i class="fa-solid fa-check tick-icon"></i>Service Warranty Up To 90 Days</h5>
+            <h5><i class="fa-solid fa-check tick-icon"></i>No Extra Charge</h5>
           </div>
         </div>
       </section>
 
       {/* services */}
 
-      <section className="services">
+      <section className="services container">
         <div className="row">
           <div className="col-lg-12 col-sm-12  text-center">
-          <h1 className='servicesh1'>Our Services</h1>
+            <h1 className='servicesh1'>Services We Provide</h1>
           </div>
         </div>
-           
 
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-lg-4 col-sm-12 service-card">
-              <img className="service-img" src={washingmachine} alt="" />
-              <h2>Washing Machine</h2>
-              <p>If there is any problem with the washing machine, then you have to contact the technician or washing machine service center. If you are searching for an online service, Service center   is the right solution for your washing machine. We offers you the service at reliable prices with quality service in Bangalore</p>
-              <ul>
-                <li>Fully Automatic Washing Machine</li>
-                <li>Automatic Washing Macine</li>
-                <li>Semi Automatic Washing Machine</li>
-                <li>Manual Washing Machine</li>
-                <li>Front & Top Load Washing Machine</li>
-              </ul>
-              <p className="text-center"> <a href="tel:80123455667" className="btn  butn"><i className="fa-solid fa-phone"></i> Book Now</a>
-              </p>
+        <div className="row ">
+          <div className="col-lg-6 col-sm-12 machine-page">
+            <img src={Machine01} alt="" style={{"height" : "366px", "width" : "550px"}}/>
+             <h1>Top Load Washing Machine</h1>
+              <p>Is your top load washing machine in need of professional repair? Look no further! Our specialized service is dedicated to providing efficient and reliable repairs for top load washing machines in Bangalore City. With our team of skilled technicians and commitment to customer satisfaction, we aim to restore your appliance to optimal working condition.</p>
+              <p>Our Services:</p>
+              <ol>
+                <li><p>Agitator Repair: If your top load washing machine’s agitator is not functioning properly or making unusual noises, our experienced technicians can diagnose the issue and repair or replace the agitator as necessary.</p></li>
+                <li><p>Spin Cycle Problems: If your washing machine is not spinning or is spinning unevenly, our experts will thoroughly inspect the motor, drive belt, and other components to identify and resolve the underlying problem.</p></li>
+                <li><p>Water Leakage Resolution: Water leakage can be a frustrating issue that can lead to further damage. Our skilled technicians will meticulously examine your washing machine to locate the source of the leak and perform the required repairs to stop the leakage.</p></li>
+                <li><p>Timer and Control Panel Repair: Malfunctions in the timer or control panel can disrupt the washing cycle. Our technicians are proficient in diagnosing and rectifying problems related to the control panel, ensuring smooth operation of your top load washing machine.</p></li>
+                <li><p>Drainage System Maintenance: If your washing machine is experiencing drainage issues, our technicians will examine the drain pump, hoses, and filters to remove any blockages and restore proper drainage functionality.</p></li>
+                <li><p>Electrical Fault Diagnosis and Repair: From faulty wiring to sensor or switch problems, electrical malfunctions can hamper the performance of your top load washing machine. Our skilled technicians will carefully diagnose and resolve electrical issues to ensure optimal functioning.</p></li>
+              </ol>
+              <p><strong>Contact us today to schedule reliable top load washing machine repair service in Bangalore City. Trust us to handle your appliance with care and expertise, providing effective solutions to restore the functionality of your top load washing machine.</strong></p>
+              <p>LG washing Machine Service</p>
+              <p>Samsung Washing Machine Service</p>
+              <p>Bosch Washing Machine Service</p>
+              <p>Whirlpool Washing Machine Service</p>
+              {/* <p>IFB Washing Machine Service</p> */}
+              {/* <ul>
+                <li>
+                  <h1><a href="tel:18003137897">Call Now</a></h1>
+                </li>
+              </ul> */}
             </div>
-            <div className="col-lg-4 col-sm-12 service-card">
-              <img className="service-img" src={airconditioner} alt="" />
-              <h2>Air Conditioner</h2>
-              <p>here are different types of problems in AC, such as, you may face recurring problems if you ignore maintenance, such as leaking hoses, clogged air filters, noisy fans, gas leaks, etc,  If smaller problems come you can do it by yourself, and for the major problems, you have to contact us for your ac works</p>
-              <ul>
-                <li>Central Air Conditioning. </li>
-                <li>Ductless, Mini-Split Air Conditioner.</li>
-                <li>Window Air Conditioner. </li>
-                <li>Portable Air Conditioner.</li>
-                <li>Hybrid Air Conditioners.</li>
-              </ul>
-              <p className="text-center"> <a href="tel:80123455667" className="btn  butn"><i className="fa-solid fa-phone"></i> Book Now</a>
-              </p>
-            </div>
-            <div className="col-lg-4 col-sm-12 service-card">
-              <img className="service-img" src={frige} alt="" />
-              <h2>Refrigerator</h2>
-              <p>If your fridge stops working or there is an external problem, we have the best technicians for all types of fridge repair services in Bangalore. Most of these types of refrigerators are repaired by our technicians We enables you to provide service at an affordable price on the day you book or call for service</p>
-              <ul>
-                <li>Double Door refrigerators</li>
-                <li>French Door refrigerators</li>
-                <li>Single Door refrigerators</li>
-                <li>Side-by-side refrigerators</li>
-              </ul>
-              <p className="text-center"> <a href="tel:80123455667" className="btn  butn"><i className="fa-solid fa-phone"></i> Book Now</a>
-              </p>
+            <div className="col-lg-6 col-sm-12 machine-page">
+            <img src={Machine02} alt="" style={{"height" : "366px", "width" : "550px"}}/>
+            <h1>Front Loading Washing Machine</h1>
+              <p>
+              Is your top load washing machine in need of professional repair? Look no further! Our specialized service is dedicated to providing efficient and reliable repairs for top load washing machines in Bangalore City. With our team of skilled technicians and commitment to customer satisfaction, we aim to restore your appliance to optimal working condition.
+                </p>
+              <p>Our Services:</p>
+              <ol>
+                <li><p>
+                Agitator Repair: If your top load washing machine’s agitator is not functioning properly or making unusual noises, our experienced technicians can diagnose the issue and repair or replace the agitator as necessary.
+                  </p></li>
+                <li><p>
+                Spin Cycle Problems: If your washing machine is not spinning or is spinning unevenly, our experts will thoroughly inspect the motor, drive belt, and other components to identify and resolve the underlying problem.
+                  </p></li>
+                <li><p>
+                Control Panel and Electronic Component Repairs: Issues with the control panel or electronic components can disrupt the functioning of your front load washing machine. Our experts can troubleshoot and repair these components to restore proper operation.
+                  </p></li>
+                <li><p>
+                Drainage System Maintenance: If your washing machine is not draining properly, our technicians will inspect and clean the drain pump, hoses, and filters to remove any blockages and restore smooth drainage.
+                </p></li>
+                <li><p>
+                Error Code Diagnosis and Resolution: If your front load washing machine displays error codes, our technicians will identify the specific issue causing the error and provide effective solutions to resolve it.
+                </p></li>
+                <li><p>
+                Electrical Fault Diagnosis and Repair: From faulty wiring to sensor or switch problems, electrical malfunctions can hamper the performance of your top load washing machine. Our skilled technicians will carefully diagnose and resolve electrical issues to ensure optimal functioning.
+                  </p></li>
+              </ol>
+              <p><strong>Contact us today to schedule reliable top load washing machine repair service in Bangalore City. Trust us to handle your appliance with care and expertise, providing effective solutions to restore the functionality of your top load washing machine.</strong></p>
+              <p>LG washing Machine Service</p>
+              <p>Samsung Washing Machine Service</p>
+              <p>Bosch Washing Machine Service</p>
+              <p>Whirlpool Washing Machine Service</p>
+              <p>IFB Washing Machine Service</p>
+              {/* <ul>
+                <li>
+                  <h1><a href="tel:18003137897">Call Now</a></h1>
+                </li>
+              </ul> */}
             </div>
           </div>
-        </div>
+          
+         
+
       </section>
 
       {/* Contact us */}
@@ -161,7 +184,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-lg-6 col=sm-12 butns">
-              <a href="tel:80123455667" className="contact-btn">CONTACT US <i class="fa-solid fa-arrow-right-long"></i></a>
+              <a href="tel:18001239687" className="contact-btn">CONTACT US <i class="fa-solid fa-arrow-right-long"></i></a>
               <a href="" className="talk-btn">LET,S TALK <i class="fa-solid fa-comments"></i></a>
             </div>
           </div>
@@ -186,20 +209,6 @@ export default function Home() {
             <div className="col-lg-4 col-sm-12 choose">
               <h3>TRUSTED TECHNICIAN</h3>
               <h6>Home Works provides only experienced technicians to fulfill the service requirement.</h6>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-4 col-sm-12 choose">
-              <h3>Competitive Pricing</h3>
-              <h6>We offer affordable and transparent pricing for our repair services. Our upfront cost estimates ensure that you have a clear understanding of the expenses involved, with no hidden charges.</h6>
-            </div>
-            <div className="col-lg-4 col-sm-12 choose">
-              <h3>Customer Satisfaction</h3>
-              <h6>Customer satisfaction is our utmost priority. We are dedicated to delivering exceptional service and ensuring that our customers are satisfied with the results..</h6>
-            </div>
-            <div className="col-lg-4 col-sm-12 choose">
-              <h3>Timely Service:</h3>
-              <h6>We value your time and strive to provide prompt and timely service. Our technicians will arrive at your location on schedule, equipped with the necessary tools and parts to complete the repairs efficiently.</h6>
             </div>
           </div>
         </div>
@@ -237,7 +246,7 @@ export default function Home() {
         <h2>Got questions? We’ve got answers. send us</h2>
         <div className="row">
           <div className="col-lg-6 col-sm-12">
-            <img className='frenqtly-img' style={{maxWidth: "100%"}} src={frenqtly} alt="" />
+            <img className='frenqtly-img' style={{ maxWidth: "100%" }} src={frenqtly} alt="" />
           </div>
           <div className="col-lg-6 col-sm-12 dropDownlist">
             <div className="dropdown col-sm-12">
@@ -302,12 +311,12 @@ export default function Home() {
               <div class="mb-3">
                 <label for="exampleInputName1" class="form-label">Name</label>
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-               
+
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                
+
               </div>
               <div class="mb-3">
                 <label for="exampleInputSubjext1" class="form-label">Subject</label>
@@ -330,7 +339,7 @@ export default function Home() {
               <div className='iconsNew'><i className="fa-solid fa-location-dot"></i></div>
               <div className='contact-head'>
                 <h5>Location</h5>
-                <p>Pune Hyderabad</p>
+                <p>Bangalore Hyderabad</p>
               </div>
             </div>
             <div className="d-flex">

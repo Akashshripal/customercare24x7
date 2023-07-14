@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import washingmachine from '../img/washmachine.png'
+// import washingmachine from '../img/washmachine.png'
 import about from '../img/about2.png'
-import airconditioner from '../img/airconditioner.png'
-import frige from '../img/frige.png'
-import frenqtly from "../img/frquently.png"
+// import airconditioner from '../img/airconditioner.png'
+import frige from '../img/frige2.png'
+import frenqtly from "../img/frquently2.png"
 
 
 export default function Fridge(){
@@ -41,15 +41,14 @@ export default function Fridge(){
         < div className="container">
           <div className="row">
             <div className="col-lg-6 col-sm-12 home-head">
-              <h6>Bangalore Service Center</h6>
-              <h1>Refrigerator Service Center For Repair & Service
-tel:18001239687</h1>
+              <h6> Service Center</h6>
+              <h1>Refrigerator Service Center For Repair & Service call 80123455667</h1>
               {/* <p>We believe in every grow at your door step one stop solutions for all home based works</p> */}
               <button className="btn">Book Now <i class="fa-solid fa-arrow-right-long"></i></button>
             </div>
             <div className="col-lg-6 col-sm-12 head-call">
               <div className="card head-call-Now">
-                <a href="tel:18003137897" className="text-center text-dark  head-call-Now"> Call Us Now</a>
+                <a href="tel:80123455667" className="text-center text-dark  head-call-Now"> Call Us Now</a>
               </div>
             </div>
           </div>
@@ -88,51 +87,24 @@ tel:18001239687</h1>
       {/* services */}
 
       <section className="servives">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-lg-4 col-sm-12 service-card">
-              <img className="service-img" src={washingmachine} alt="" />
-              <h2>Washing Machine</h2>
-              <p>If there is any problem with the washing machine, then you have to contact the technician or washing machine service center. If you are searching for an online service, Service center   is the right solution for your washing machine. We offers you the service at reliable prices with quality service in Bangalore</p>
-              <ul>
-                <li>Fully Automatic Washing Machine</li>
-                <li>Automatic Washing Macine</li>
-                <li>Semi Automatic Washing Machine</li>
-                <li>Manual Washing Machine</li>
-                <li>Front & Top Load Washing Machine</li>
-              </ul>
-              <p className="text-center"> <a href="tel:18001239687" className="btn btn-primary butn"><i className="fa-solid fa-phone"></i> Book Now</a>
-              </p>
-            </div>
-            <div className="col-lg-4 col-sm-12 service-card">
-              <img className="service-img" src={airconditioner} alt="" />
-              <h2>Air Conditioner</h2>
-              <p>here are different types of problems in AC, such as, you may face recurring problems if you ignore maintenance, such as leaking hoses, clogged air filters, noisy fans, gas leaks, etc,  If smaller problems come you can do it by yourself, and for the major problems, you have to contact us for your ac works</p>
-              <ul>
-                <li>Central Air Conditioning. </li>
-                <li>Ductless, Mini-Split Air Conditioner.</li>
-                <li>Window Air Conditioner. </li>
-                <li>Portable Air Conditioner.</li>
-                <li>Hybrid Air Conditioners.</li>
-              </ul>
-              <p className="text-center"> <a href="tel:18001239687" className="btn btn-primary butn"><i className="fa-solid fa-phone"></i> Book Now</a>
-              </p>
-            </div>
-            <div className="col-lg-4 col-sm-12 service-card">
-              <img className="service-img" src={frige} alt="" />
-              <h2>Refrigerator</h2>
-              <p>If your fridge stops working or there is an external problem, we have the best technicians for all types of fridge repair services in Bangalore. Most of these types of refrigerators are repaired by our technicians We enables you to provide service at an affordable price on the day you book or call for service</p>
-              <ul>
-                <li>Double Door refrigerators</li>
-                <li>French Door refrigerators</li>
-                <li>Single Door refrigerators</li>
-                <li>Side-by-side refrigerators</li>
-              </ul>
-              <p className="text-center"> <a href="tel:18001239687" className="btn btn-primary butn"><i className="fa-solid fa-phone"></i> Book Now</a>
-              </p>
-            </div>
+      <div className="row">
+          <div className="col-lg-12 col-sm-12 text-center">
+          <h1 className='servicesh1'>Our Services</h1>
+          <img className='fridge-ser-img' src={frige} alt="/" />
+          <h3 className='servicesh1 servicesh3'>Refrigerator Service And Repair In Bangalore</h3>
+
+
           </div>
         </div>
+ 
+
+        <div class="elementor-widget-container container service-content">
+             
+							<p>Are you in need of professional refrigerator service and repair in Bangalore? Look no further! We are your trusted experts in providing top-notch repairs and maintenance for refrigerators in the Bangalore area. With our skilled technicians and commitment to customer satisfaction, we aim to keep your refrigerator running smoothly and efficiently.</p><p>Our Services:</p><ol><li><p>Refrigerator Repair: Whether your refrigerator is not cooling properly, experiencing a faulty compressor, or facing any other issue, our experienced technicians can diagnose and repair it efficiently. We have extensive knowledge of various refrigerator brands and models, ensuring accurate and reliable repairs.</p></li><li><p>Refrigerator Maintenance: Regular maintenance is essential to keep your refrigerator in optimal condition. Our technicians provide thorough inspections, cleaning, and preventive maintenance to prevent future breakdowns and extend the lifespan of your appliance.</p></li><li><p>Refrigerator Parts Replacement: If your refrigerator requires any parts replacement, we only use genuine parts sourced directly from manufacturers. This ensures the highest quality and compatibility for your specific refrigerator model.</p></li><li><p>Refrigerator Troubleshooting: Is your refrigerator making unusual noises or displaying error codes? Our technicians have the expertise to troubleshoot and identify the root cause of the problem. We then provide effective solutions to resolve the issues and restore your refrigerator’s functionality.</p></li><li><p>Are you facing issues with your fridge? Look no further! We are your trusted experts in providing top-quality fridge service and repair in Bangalore. With our team of skilled technicians and a commitment to customer satisfaction, we strive to keep your fridge running smoothly and efficiently.</p><p>Our Services:</p><ol><li><p>Fridge Repair: Whether your fridge is not cooling properly, experiencing electrical problems, or facing any other issue, our experienced technicians can diagnose and repair it with precision. We have extensive knowledge of various fridge brands and models, ensuring accurate and reliable repairs.</p></li><li><p>Fridge Maintenance: Regular maintenance is key to prolonging the lifespan of your fridge and optimizing its performance. Our technicians provide thorough inspections, cleaning, and preventive maintenance to keep your fridge in excellent condition and prevent future breakdowns.</p></li><li><p>Fridge Parts Replacement: If your fridge requires any parts replacement, we only use genuine parts sourced directly from manufacturers. This ensures the highest quality and compatibility for your specific fridge model.</p></li><li><p>Fridge Troubleshooting: Is your fridge making strange noises or exhibiting unusual behavior? Our technicians have the expertise to troubleshoot and identify the root cause of the problem. We then provide effective solutions to resolve the issues and restore your fridge’s functionality.</p></li></ol><p>Why Choose Us?</p><ol><li><p>Expert Technicians: Our team of skilled technicians specializes in fridge service and repair. They have in-depth knowledge and experience in handling various fridge brands and models, ensuring accurate diagnosis and efficient repairs.</p></li><li><p>Prompt and Reliable Service: We understand the inconvenience of a malfunctioning fridge. That’s why we prioritize prompt service and strive to schedule repairs at your convenience, minimizing any disruption to your daily routine.</p></li><li><p>Affordable and Transparent Pricing: We offer competitive and transparent pricing for our services. We provide upfront cost estimates and ensure there are no hidden charges, allowing you to make informed decisions.</p></li><li><p>Genuine Parts and Quality Workmanship: We use only genuine parts sourced directly from manufacturers to ensure the longevity and optimal performance of your fridge</p></li></ol></li></ol><ul><li>Refrigerator service Bangalore</li><li>Refrigerator repair Bangalore</li><li>Professional refrigerator technicians</li><li>Affordable refrigerator repairs</li><li>Best refrigerator service in Bangalore</li><li>Reliable refrigerator maintenance</li><li>Expert refrigerator repair services</li><li>Refrigerator service center Bangalore</li><li>Emergency refrigerator repairs</li><li>Quick refrigerator service</li></ul><p><strong>At Refrigerator Service and Repair in Bangalore, we understand the importance of a properly functioning refrigerator in your daily life. That’s why we strive to provide prompt, reliable, and affordable services. Customer satisfaction is our priority, and our friendly customer support team is always available to address any inquiries or concerns you may have.</strong></p><p><strong>Contact us today to schedule your refrigerator service and repair in Bangalore. Trust us to handle your appliance with care and expertise, ensuring optimal performance and longevity.</strong></p><ol><li>Refrigerator service in Bangalore</li><li>Refrigerator repair Bangalore</li><li>Fridge repair service near me</li><li>Best refrigerator service center in Bangalore</li><li>Affordable refrigerator repair Bangalore</li><li>Professional fridge repair in Bangalore</li><li>Quick refrigerator service Bangalore</li><li>Expert refrigerator technicians Bangalore</li><li>Emergency fridge repair Bangalore</li><li>Reliable refrigerator maintenance in Bangalore</li><li>Fridge service Bangalore</li><li>Fridge repair Bangalore</li><li>Professional fridge technicians</li><li>Affordable fridge repairs</li><li>Best fridge service in Bangalore</li><li>Reliable fridge maintenance</li><li>Expert fridge repair services</li><li>Fridge service center Bangalore</li><li>Emergency fridge repairs</li><li>Quick fridge service</li></ol><p>LG Refrigerator Repair Service</p><p>Bosch Refrigerator Repair Service Center</p><p>Samsung Refrigerator Repair Service Center</p><p>Whirlpool Refrigerator Repair Service Center</p><p>Godrej Refrigerator Repair Service Center</p><p>Haier Refrigerator Repair Service Center</p>
+              {/* <ul><li><h1>
+                <a className='service-content-call' href="tel:80123455667">Call Now</a></h1></li>
+                </ul>					 */}
+            	</div>
       </section>
 
    
@@ -319,7 +291,7 @@ tel:18001239687</h1>
               <div className='iconsNew'><i className="fa-solid fa-phone-volume"></i></div>
               <div className='contact-head' >
                 <h5>Make A Call</h5>
-                <p>18001239687</p>
+                <p>80123455667</p>
               </div>
             </div>
             <div className="d-flex ">
@@ -327,7 +299,7 @@ tel:18001239687</h1>
               </div>
               <div className='contact-head'>
                 <h5>Email</h5>
-                <p>info@servicecenterssupport24x7.in</p>
+                <p>info@yourdomainname.com</p>
               </div>
             </div>
           </div>

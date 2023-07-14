@@ -1,15 +1,21 @@
 /* navbar */
-
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body{
   font-family: 'Mukta', sans-serif;
   font-family: 'PT Sans', sans-serif;
+  background-color: #98DFD6;
+  background-color: #EFE1D1;
 }
 .icon{
-    color: #FF512F;
+    color: #3F2E3E;
 }
 .icon-color{
     padding: 10px;
-    background: #FF512F;
+    background: #3F2E3E;
     margin-right: 2px;
     border-radius: 3px;
     color: aliceblue;
@@ -19,7 +25,8 @@ body{
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: white;
+     background-color: #EFE1D1;
+    ;
     /* margin-top: 100px; */
     /* padding-bottom: 0; */
 }
@@ -46,7 +53,7 @@ body{
   }
  
   .nav-link:hover{
-   color: #ff512f;
+   color: #3F2E3E;
 }
   .search-inpt{
     width: 150px;
@@ -57,13 +64,14 @@ body{
   
   /* call-now-down */
   .call-now-down{
-    background-color: #00BB00;
+    background-color: #A78295;
     padding: 9px 0;
     position: fixed;
     bottom: 0;
     z-index: 1020;
     width: 100%;
     text-align: center;
+    margin: 0 auto;
    
   }
   .call-now-Down{
@@ -81,15 +89,28 @@ body{
  /* header */
   .Home{
     /* margin-top: 200px; */
-    background-image: url('./img/Home-bg.png');
+    background-image: url('./img/contact-bg.png');
+    background:rgba(0,0,0,0.5) url('./img/contact-bg.png');
+    background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: #EFE1D1;
+
     /* height: 500px; */
   }
   .fridge{
     background-image: url('./img/Home-bg2.png');
-    color: black;
+    color: #EFE1D1;
+  }
+  .machine{
+    background:rgba(0,0,0,0.5) url('./img/Home-bg3.png');
+    /* color: black; */
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    
   }
   .home-head {
     margin-top: 80px;
@@ -105,7 +126,7 @@ body{
     padding-right: 15%;
   }
   .home-head > .btn{
-    background-color: #FF512F;
+    background-color: #3F2E3E;
     margin-bottom: 150px;
     color: white;
   }
@@ -117,6 +138,8 @@ body{
   }
   .head-call-Now{
     box-shadow: 10px 10px 1px gray;
+    background-color: #A78295;
+    color: #EFE1D1;
   }
   .head-call-Now > a{
     font-size: 30px;
@@ -141,7 +164,7 @@ body{
   }
   .customer{
     color: white;
-    background: linear-gradient(90deg, rgba(255,81,47,1) 35%, rgba(240,152,25,1) 100%);
+    background: linear-gradient(90deg, #A78295 35%, #EFE1D1 100%);
     position: absolute;
     bottom: 50px;
     left: -25px;
@@ -159,21 +182,75 @@ body{
    font-size: 16px;
    } 
   .tick-icon{
-    color: #FF512F;
+    color: #A78295;
    margin-bottom: 20px;
 
   }
   .about-info > h6{
-    color: #FF512F;
+    color: #A78295;
   }
   .about-info > h3,h5{
-    color: #0e2258;
+    color: #331D2C;
   }
   .about-info > *{
     margin-bottom: 25px;
   }
 
   /* services */
+
+  /* /services-friege */
+  .servicesh1{
+   font-family: 'Mukta', sans-serif;
+    color: #331D2C;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 400;
+  }
+  .servicesh3{
+    font-size: 40px;
+    font-weight: 300;
+    
+  }
+  .service-content > p{
+   font-family: 'Mukta', sans-serif;
+   font-size: 18px;
+   font-weight: 300;
+   color: gray;
+
+  }
+  .service-content > ol{
+   font-family: 'Mukta', sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   color: #331D2C;
+
+  }
+  .service-content-call{
+    text-decoration: none;
+    text-align: center;
+    color: #A78295;
+  }
+  .service-content-call:hover{
+    color: #3F2E3E;
+  }
+  .fridge-ser-img{
+    max-width: 100%;
+  }
+  /* machine-page */
+  .machine-page > ol,.machine-page > p{
+    color: gray;
+    font-size: 17px;
+   font-family: 'Mukta', sans-serif;
+  font-weight: 300;
+  }
+  .machine-page > h1{
+  color: #331D2C;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 400;
+  }
+  .machine-page > img {
+        max-width: 100%;
+  }
   .service-img{
     width: 100%;
   }
@@ -181,7 +258,7 @@ body{
     margin-bottom: 20px;
   }
   .service-card > h2{
-    color: #0e2258;
+    color: #331D2C;
     font-weight: 400;
     text-align: center;
     
@@ -194,9 +271,10 @@ body{
   .butn{
    font-family: 'Mukta', sans-serif;
     padding:15px 45px;
-    background-color: #322389;
+    background-color: #331D2C;
     font-size: 20px;
     font-weight: 400;
+    color: white;
   }
   /* contact */
   .contact{ 
@@ -217,10 +295,10 @@ body{
   
   }
   .contact-head > h2{
-   color: aliceblue;
+   color: #331D2C;
   }
   .states{
-   color: aliceblue;
+   color: #331D2C;
    font-size: 21px;
   }
   .butns > a{
@@ -236,7 +314,7 @@ body{
   .contact-btn{
     background-color: white;
     transition: 0.5s;
-    color: #0e2258;
+    color: #331D2C;
    
   }
   .contact-btn:hover{
@@ -252,7 +330,7 @@ body{
   .talk-btn:hover{
     background-color:white ;
     transition: 0.5s;
-    color: #0e2258;
+    color: #331D2C;
 
 
   }
@@ -270,11 +348,11 @@ body{
     font-weight: 700;
     text-transform: capitalize;
     font-style: normal;
-    color: #1C244B;
+    color: #331D2C;
 
   }
   .whychoose > h1{
-    color: #1C244B;
+    color: #331D2C;
     font-family: "Poppins", Sans-serif;
     font-size: 65px;
     font-weight: 700;
@@ -290,7 +368,7 @@ body{
     margin: 0 auto;
   }
   .servicecenter > h6{
-  color: #f35a38;
+  color: #3F2E3E;
   font-weight: 700;
   font-size: 16px;
   }
@@ -299,13 +377,13 @@ body{
     font-family: 'Quicksand', sans-serif;
     font-size: 36px;
     font-weight: 600;
-    color: #1C244B;
+    color: #331D2C;
 
   }
   .center-info > h6{
     font-weight: 700;
     margin-bottom: 5px;
-    color: #0e2258;
+    color: #331D2C;
     line-height: 1.2;
     letter-spacing: 2px;
   }
@@ -320,7 +398,7 @@ body{
   /* frquently asked */
   .Drops {
     /* padding: 10px 110px; */
-    color: #0e2258;
+    color: #331D2C;
     /* text-align: left; */
     font-size: 18px;
     margin: 25px 0;
@@ -330,7 +408,7 @@ body{
     max-width: 100%;
   } */
   .Askedques > h1 {
-    color: #1C244B;
+    color: #331D2C;
     font-family: "Poppins", Sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -341,7 +419,7 @@ body{
     font-family: "Poppins", Sans-serif;
     font-size: 17px;
     font-weight: 100;
-    color: #0e2258;
+    color: #331D2C;
     margin-bottom: 35px;
   }
   /* contactusnew */
@@ -353,7 +431,7 @@ body{
   
   .contactusnew-info > h2{
     font-size: 36px;
-    color: #0e2258;
+    color: #331D2C;
     font-weight: 700;
     margin-top: -8px;
     margin-bottom: 30px;
@@ -364,7 +442,7 @@ body{
   .iconsNew{
     font-size: 25px;
     padding: 5px;
-    color: #f35a38;
+    color: #A78295;
     margin-right: 5px;
   }
   /* .contactnew-right{
@@ -396,7 +474,7 @@ body{
      /* margin: 0 auto; */
   }
   .contacting{
-    color: #f35a38 ;
+    color: #3F2E3E ;
     font-weight: 700;
     font-size: 16px;
   };
@@ -422,7 +500,9 @@ body{
      .Home{
        height: 100%;
       }
-
+      .home-head > h1{
+        font-size: 45px;
+      }
       /* about */
   .rel{
    width: 100%;
@@ -483,7 +563,7 @@ body{
     margin: 25px 0;
   }
   .arrow-icon{
-    color: #f35a38;
+    color: #3F2E3E;
     /* border-radius: 1px solid white; */
 
   }
@@ -564,7 +644,7 @@ body{
     padding: 5px 15px;
   }
   .arrow-icon{
-    color: #f35a38;
+    color: #3F2E3E;
   }
   .footer-bootom{
     margin: 35px 0;
