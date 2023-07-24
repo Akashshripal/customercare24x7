@@ -6,6 +6,11 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import Fridge from './Components/Fridge';
 import Machine from './Components/Machine';
+import ThankYou from './Components/Thankyou';
+import PopupForm from './Components/PopupForm';
+
+// import 'animate.css';
+
 
 function App() {
   return (
@@ -15,11 +20,9 @@ function App() {
        <Route path='/' exact element={<Home/>}/>
        <Route path='/fridge' exact element={<Fridge/>}/>
        <Route path='/Machine'exact element={<Machine/>}/>
-       {/*<Route path='/Terms' element={<Terms/>}/>
-       <Route path='/Privacy' element={<Privacy/>}/>
-       <Route path='/Contact' element={<Contact/>}/>
-       <Route path='/About' element={<About/>}/> */}
+       <Route path="/Thankyou" exact element ={<ThankYou/>}/>
     </Routes>
+    <PopupForm/>
     <Footer/>
     </>
   );

@@ -1,16 +1,28 @@
 // import React from "react";
 import React, { useState, useEffect } from 'react';
 import washingmachine from '../img/washmachine.png'
-import about from '../img/about.png'
+import about from '../img/about1.png'
 import airconditioner from '../img/airconditioner.png'
 import frige from '../img/frige.png'
 import frenqtly from "../img/frquently.png"
+import { FcPortraitMode,FcSurvey,FcOvertime } from "react-icons/fc";
+import 'animate.css';
+import axios from 'axios';
+
 
 
 export default function Home() {
 
   const [number, setNumber] = useState(0);
   const [worker, setWorker] = useState(0);
+
+ //form input
+
+ const [name ,setName ] = useState('');
+//  const [email ,setEmail ] = useState('');
+ const [phone , setPhone] = useState('');
+ const [service,setService] = useState('');
+ const [message ,setMessage] = useState('');
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -25,7 +37,6 @@ export default function Home() {
   }, [number]);
 
 
-
   useEffect(() => {
     const interval = setInterval(() => {
       if (worker < 25) {
@@ -37,21 +48,46 @@ export default function Home() {
 
     return () => clearInterval(interval);
   }, [worker]);
+
+  
+  const handleSubmit =(e)=>{
+    e.preventDefault();
+    const data = {
+      Name:name,
+      Phone:phone,
+      Service:service,
+      Message:message
+    }
+    axios.post('https://sheet.best/api/sheets/34a5f71b-ec0b-4b45-9410-5e8d6ee01b26',data).then((response)=>{
+      console.log(response);
+      setName('');
+      setPhone('');
+      setService('');
+      setMessage('');
+  
+  
+    })
+   
+
+  }
+
   return (
     <>
+      {/* <PopupForm/> */}
       <section className="Home">
         < div className="container">
           <div className="row">
-            <div className="col-lg-6 col-sm-12 home-head">
-              <h6>Service Support </h6>
-              <h1>Service Center
-                In Call @ 80123455667</h1>
+            <div className="col-lg-6 col-sm-12 home-head animate__animated animate__backInLeft">
+              {/* <h6>Service Support </h6> */}
+              <h6>Home Support </h6>
+              <h1>Home Support 24x7
+                In Call @ <br /> 1800 1022 745</h1>
               <p>We believe in every grow at your door step one stop solutions for all home based works</p>
-              <button className="btn">Book Now <i class="fa-solid fa-arrow-right-long"></i></button>
+              <button className="btn"><a className='home-btn' href="tel:1800 1022 745">Book Now</a> <i class="fa-solid fa-arrow-right-long"></i></button>
             </div>
             <div className="col-lg-6 col-sm-12 head-call">
               <div className="card head-call-Now">
-                <a href="tel:80123455667" className="text-center text-dark  head-call-Now-btn">Fell Free To Call Us Now</a>
+                <a href="tel:1800 1022 745" className ="text-center text-dark  head-call-Now-btn animate__animated animate__rubberBand">Feel Free To Call Us Now</a>
               </div>
             </div>
           </div>
@@ -65,9 +101,9 @@ export default function Home() {
           <div className="col-lg-6 col-sm-12">
             <div className="rel">
               <p className="about-img">
-                <img className='about-image'  src={about} alt="" />
+                <img className='about-image animate__animated animate__backInUp'  src={about} alt="" />
                 </p>
-              <div className="customer">
+              <div className="customer animate__animated animate__backInRight">
                 <h1>25000+</h1>
                 <h4>Customers Served</h4>
               </div>
@@ -97,10 +133,10 @@ export default function Home() {
 
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-4 col-sm-12 service-card">
+            <div className="col-lg-4 col-sm-12 service-card   animate__animated animate__bounceInLeft">
               <img className="service-img" src={washingmachine} alt="" />
               <h2>Washing Machine</h2>
-              <p>If there is any problem with the washing machine, then you have to contact the technician or washing machine service center. If you are searching for an online service, Service center   is the right solution for your washing machine. We offers you the service at reliable prices with quality service in Bangalore</p>
+              <p>If there is any problem with the washing machine, then you have to contact the technician or washing machine service center. If you are searching for an online service, Service center   is the right solution for your washing machine. We offers you the service at reliable prices with quality service</p>
               <ul>
                 <li>Fully Automatic Washing Machine</li>
                 <li>Automatic Washing Macine</li>
@@ -108,13 +144,13 @@ export default function Home() {
                 <li>Manual Washing Machine</li>
                 <li>Front & Top Load Washing Machine</li>
               </ul>
-              <p className="text-center"> <a href="tel:80123455667" className="btn  butn"><i className="fa-solid fa-phone"></i> Book Now</a>
+              <p className="text-center"> <a href="tel:1800 1022 745" className="btn  butn"><i className="fa-solid fa-phone"></i> Book Now</a>
               </p>
             </div>
-            <div className="col-lg-4 col-sm-12 service-card">
+            <div className="col-lg-4 col-sm-12 service-card animate__animated animate__bounceInUp">
               <img className="service-img" src={airconditioner} alt="" />
               <h2>Air Conditioner</h2>
-              <p>here are different types of problems in AC, such as, you may face recurring problems if you ignore maintenance, such as leaking hoses, clogged air filters, noisy fans, gas leaks, etc,  If smaller problems come you can do it by yourself, and for the major problems, you have to contact us for your ac works</p>
+              <p>Here are different types of problems in AC, such as, you may face recurring problems if you ignore maintenance, such as leaking hoses, clogged air filters, noisy fans, gas leaks, etc,  If smaller problems come you can do it by yourself, and for the major problems, you have to contact us for your ac works</p>
               <ul>
                 <li>Central Air Conditioning. </li>
                 <li>Ductless, Mini-Split Air Conditioner.</li>
@@ -122,10 +158,10 @@ export default function Home() {
                 <li>Portable Air Conditioner.</li>
                 <li>Hybrid Air Conditioners.</li>
               </ul>
-              <p className="text-center"> <a href="tel:80123455667" className="btn  butn"><i className="fa-solid fa-phone"></i> Book Now</a>
+              <p className="text-center"> <a href="tel:1800 1022 745" className="btn  butn"><i className="fa-solid fa-phone"></i> Book Now</a>
               </p>
             </div>
-            <div className="col-lg-4 col-sm-12 service-card">
+            <div className="col-lg-4 col-sm-12 service-card animate__animated animate__bounceInRight">
               <img className="service-img" src={frige} alt="" />
               <h2>Refrigerator</h2>
               <p>If your fridge stops working or there is an external problem, we have the best technicians for all types of fridge repair services in Bangalore. Most of these types of refrigerators are repaired by our technicians We enables you to provide service at an affordable price on the day you book or call for service</p>
@@ -133,9 +169,10 @@ export default function Home() {
                 <li>Double Door refrigerators</li>
                 <li>French Door refrigerators</li>
                 <li>Single Door refrigerators</li>
+                <li>All Door refrigerators</li>
                 <li>Side-by-side refrigerators</li>
               </ul>
-              <p className="text-center"> <a href="tel:80123455667" className="btn  butn"><i className="fa-solid fa-phone"></i> Book Now</a>
+              <p className="text-center"> <a href="tel:1800 1022 745" className="btn  butn"><i className="fa-solid fa-phone"></i> Book Now</a>
               </p>
             </div>
           </div>
@@ -161,7 +198,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-lg-6 col=sm-12 butns">
-              <a href="tel:80123455667" className="contact-btn">CONTACT US <i class="fa-solid fa-arrow-right-long"></i></a>
+              <a href="tel:1800 1022 745" className="contact-btn">CONTACT US <i class="fa-solid fa-arrow-right-long"></i></a>
               <a href="" className="talk-btn">LET,S TALK <i class="fa-solid fa-comments"></i></a>
             </div>
           </div>
@@ -213,19 +250,20 @@ export default function Home() {
         <h4>How It Works</h4>
         <div className="row">
           <div className="col-lg-6 col-sm-4 center-info">
-            <img src="https://servicecentersupport24x7.co.in/wp-content/uploads/2023/03/phone-2.png" alt="" />
+            <FcSurvey className='center-info-img'/>
             <h6>CHOOSE A SERVICES</h6>
             <p>Just submit mobile number we’ll call you</p>
           </div>
           <div className="col-lg-6 col-sm-4 center-info">
-            <img src="https://servicecentersupport24x7.co.in/wp-content/uploads/2023/03/time-1.png" alt="" />
+            {/* <img src="https://servicecentersupport24x7.co.in/wp-content/uploads/2023/03/time-1.png" alt="" /> */}
+            <FcOvertime className="center-info-img"/>
             <h6>BOOK SERVICE</h6>
-            <p>Our executive Weill call and confirm appointment time</p>
+            <p>Our executive will call and confirm appointment time</p>
           </div>
         </div>
         <div className="row">
           <div className="col-lg-6 col-sm-4 center-info Sit-back">
-            <img src="https://servicecentersupport24x7.co.in/wp-content/uploads/2023/03/user-1.png" alt="" />
+          <FcPortraitMode className='center-info-img'/>
             <h6>SIT BACK & RELAX</h6>
             <p>An expert, technician will come on time at your doorstep!</p>
           </div>
@@ -296,32 +334,40 @@ export default function Home() {
         <div className="row ">
           <div className="col-lg-6 col-sm-12 contactusnew-info">
             <h5 className='contacting'>CONTACT US</h5>
-            <h2>If you have any questions, please fill free to contact us, our customer service center is working for you 24/7</h2>
+            <h2>If you have any questions, please feel free to contact us, our customer service center is working for you 24/7</h2>
 
-            <form className='contactNew-form'>
-              <div class="mb-3">
-                <label for="exampleInputName1" class="form-label">Name</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <form className='form-group contactNew-form' onSubmit={handleSubmit} action=''>
+              <div className="mb-3">
+                <label for="exampleInputName1" className="form-label">Name</label>
+                <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required
+                 onChange={(e)=> setName(e.target.value)} value={name}
+                />
                
               </div>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            
+              <div className="mb-3">
+                <label for="exampleInputSubjext1" className="form-label">Phone number</label>
+                <input type="number" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required
+                 onChange={(e)=>setPhone(e.target.value)} value={phone}
                 
+                />
               </div>
-              <div class="mb-3">
-                <label for="exampleInputSubjext1" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              <label for="exampleInputSubjext1" className="form-label">Service You Need</label>
+              <select type="text"  name='service' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required
+               onChange={(e)=>setService(e.target.value)} value={service}
+              >
+                <option value="Select Your Service">Select Your Service</option>
+                <option value="Washing Machine Service and Repair">Washing Machine Service and Repair</option>
+                <option value="Fridge Service and Repair">Fridge Service and Repair</option>
+                <option value="Microwave Ovan Service and Repair">Microwave Ovan Service and Repair</option>
+            </select>
+              <div className="mb-3">
+                <label for="exampleInputSubjext1" className="form-label">Your message (optional)</label>
+                <textarea type="text" className="form-control" id="exampleInputtextarea1" aria-describedby="emailHelp" 
+                 onChange={(e)=>setMessage(e.target.value)} value={message}
+                />
               </div>
-              <div class="mb-3">
-                <label for="exampleInputSubjext1" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputSubjext1" class="form-label">Your message (optional)</label>
-                <textarea type="text" class="form-control" id="exampleInputtextarea1" aria-describedby="emailHelp" />
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" className="btn contactNew-form-btn">Submit</button>
             </form>
 
           </div>
@@ -330,14 +376,14 @@ export default function Home() {
               <div className='iconsNew'><i className="fa-solid fa-location-dot"></i></div>
               <div className='contact-head'>
                 <h5>Location</h5>
-                <p>Pune Hyderabad</p>
+                <p>Banglore</p>
               </div>
             </div>
             <div className="d-flex">
               <div className='iconsNew'><i className="fa-solid fa-phone-volume"></i></div>
               <div className='contact-head' >
                 <h5>Make A Call</h5>
-                <p>18001239687</p>
+                <p>1800 1022 745</p>
               </div>
             </div>
             <div className="d-flex ">
@@ -345,12 +391,18 @@ export default function Home() {
               </div>
               <div className='contact-head'>
                 <h5>Email</h5>
-                <p>info@yourdomainname.com</p>
+                <p>info@customerhomesupport24x7.in</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <div className="Disclaimer row text-center p-5">
+            <div className="col-lg-12 col-sm-12 ">
+                <h4>DISCLAIMER</h4>
+                <h6>WE ARE AN INDEPENDENT SERVICE PROVIDER AND WE HAVE NO AUTHORIZATION FROM ANY COMPANY: AS "ANY HOME APPLIANCES AUTHORIZED CUSTOMER CARE". WE DEAL WITH ALL APPLIANCES PRODUCTS ONLY AFTER THE STANDARD ONE YEAR WARRANTY.</h6>
+            </div>
+        </div>
     </>
   )
 }
